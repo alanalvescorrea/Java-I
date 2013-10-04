@@ -1,0 +1,165 @@
+Facos
+23.09.2009
+
+Exercícios aula 6
+
+1. 	import java.util.Scanner;
+
+	public class Exercicio1 {
+
+	public static void main(String[] args) {
+	
+		Scanner s= new Scanner (System.in);
+		
+		System.out.println("Informe nome do produto");
+		String n= s.nextLine();
+		
+		System.out.println("Informe valor do produto");
+		double v= s.nextDouble();
+		
+		if (v>20)
+			System.out.println("O nome do produto é " + n);
+			
+		else if(v<10)
+			System.out.println("O nome do produto é " + n);
+		}
+	}
+	
+*****
+
+
+2. 	import java.util.Scanner;
+
+	public class Sorveteria {
+
+	public static void main(String[] args) {
+	
+		Scanner s= new Scanner (System.in);
+		
+		System.out.println("1- Refri pequeno: R$0,60");
+
+	public class Sorveteria {
+
+	public static void main(String[] args) {
+	
+		Scanner s= new Scanner (System.in);
+		
+		System.out.println("1- Refri pequeno: R$0,60");
+		System.out.println("2- Refri grande: R$ 0,80");
+		System.out.println("3- Suco de laranja: R$ 1,00");
+		System.out.println("4- Casquinha simples: R$ 1,20");
+		System.out.println("5- Casquinha simples com cobertura: R$ 1,20");
+		System.out.println("6- Casquinha dupla R$: 1,20");
+		System.out.println("7- Casquinha dupla com cobertura: R$ 1,40");
+		System.out.println("8- Sundae: R$ 1,50");
+		System.out.println("9- Banana Split: R$ 2,00");
+		System.out.println("10-Especial casa: R$ 2,50");
+		
+		System.out.println("\nEscolha o código do produto");
+		int n = s.nextInt();
+		
+		
+		System.out.println("Digite a quantidade de unidades");
+		int q= s.nextInt();
+		
+		switch (n) {
+        
+        case 1: System.out.println(" O valor final é R$ " + 0.6f * q); break;
+        case 2: System.out.println(" O valor final é R$ " + 0.8f * q); break;
+        case 3: System.out.println(" O valor final é R$ " + 1f * q); break;
+        case 4: System.out.println(" O valor final é R$ " + 1f* q); break;
+        case 5: System.out.println(" O valor final é R$ " + 1.2f * q); break;
+        case 6: System.out.println(" O valor final é R$ " + 1.2f * q); break;
+        case 7: System.out.println(" O valor final é R$ " + 1.4f * q); break;
+        case 8: System.out.println(" O valor final é R$ " + 1.5f * q); break;
+        case 9: System.out.println(" O valor final é R$ " + 2f * q); break;
+        case 10: System.out.println(" O valor final é R$ " + 2.5f * q); break;
+        default : System.out.println ("Produto Inválido desconhecido"); break;
+        			}
+	}
+}
+
+
+*******
+
+4. import java.util.Scanner;
+
+public class Notas {
+
+	
+public static void main(String[] args) {
+	
+	
+Scanner s= new Scanner (System.in);
+
+
+
+String n;
+float m;
+
+for (int i=0; i<=5; i ++){
+
+	System.out.println("Informe nome  aluno");
+	n= s.nextLine();
+		
+		
+    System.out.println("Informe media aluno");
+    m = s.nextFloat();
+    
+    
+   if (m<=5){
+	   System.out.println("Aluno Reprovado");
+       
+   }
+   else if(m>5 && m<7)
+	   System.out.println("Aluno Entrou em Exame ");
+   
+   else 
+	   System.out.println("Aluno Aprovado");
+   
+}
+	}
+
+}
+
+	
+***********
+
+5. import java.util.Scanner;
+public class Positivos_ngativos {
+
+	
+	public static void main(String[] args) {
+		Scanner s= new Scanner (System.in);
+		
+		
+		
+		int n= -9999;
+		int contp=0;
+		int contn=0;
+	
+		
+		while (n!=0){
+			
+			
+		System.out.println("Informe um Número e 0(zero) para sair");
+
+		n = s.nextInt();
+		
+		
+		
+				if (n<0){
+					contn= contn+n;
+					System.out.println("A soma soma dos contadres negativos é " + contn);
+				}
+				else if (n>0){
+					contp= contp+n;
+					System.out.println("A soma dos numeros positivos é " + contp);
+				}
+		
+		
+		}
+	
+	}
+
+}

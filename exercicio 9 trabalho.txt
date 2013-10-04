@@ -1,0 +1,36 @@
+programa 9
+
+
+public class Ex9 {
+
+public static void main (String [] args){
+
+Scanner s= new Scanner (System.in);
+
+int[] v1=newint[8];
+
+
+for (int i=0; i<v1.length; i++){
+
+v1[1]=s.nextInt();
+
+}
+
+int aux;
+
+for (int i=0; i<v1.legth - 1; i++){
+
+for (intx=x+1; x<v1.length; x++){
+
+
+if (v1[1] < v1 [x]){
+
+
+aux=v1[x];
+
+v1[x]=v1[i];
+v1[i]=aux;
+
+}
+}
+}

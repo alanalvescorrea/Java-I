@@ -1,0 +1,48 @@
+
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Renata
+ */
+public class Cliente {
+    private String nome;
+    private long pontos;
+     double novoValor=0;
+       long desconto=0;
+        long novosPontos=0;
+        double valor=0;
+
+    public  Cliente(String aNome){
+        nome=aNome;
+        pontos=501;
+    }
+
+    public double fazCompra(double valor){
+        //atribui o valor para a variável global;
+       this.valor=valor;
+       novosPontos= (long)Math.round(valor);
+        
+        if (pontos > 500){
+            desconto =(int)pontos/100;
+            if (desconto > valor){
+                desconto=0;
+                novoValor=valor-desconto;
+            }
+ else{
+            novoValor=valor-desconto;}
+
+        }
+ else{
+     novoValor=valor;
+        }
+pontos=pontos+novosPontos;
+        return novoValor;
+    }
+
+    public void exibeDados(){
+
+        JOptionPane.showMessageDialog(null, " Nome: "+nome+ "\n Valor: "+valor+ "\n Desconto " + desconto+"\n Novo Valor " + novoValor + "");
+    }
+}

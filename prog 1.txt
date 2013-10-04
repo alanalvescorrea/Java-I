@@ -1,0 +1,112 @@
+classe - primeira letra maiuscula, quando composta a primeira letra da segunda palavra tbm deve ser maiuscula.
+
+Funcionarios 
+CadastroDeCliente
+CadastroCliente
+
+
+método         e       atributo
+
+alterar nome                     nome
+modificarsalario                 salario
+
+
+getnome>>>> para retornar nome   nome cliente
+
+setnome>>>> para obter o nome 
+
+Validos
+Cor
+_nomeAluno
+$nota_
+
+invalidos para atributos identificadores
+nome aluno
+1nome
+
+
+
+
+
+
+
+
+
+
+"quadrado"   -  valor de uma atributo
+data         -  atributo
+numero       -   atributo
+move        -  metodo
+Poligono      - Classe
+3-       - valor de um atributo
+"hexagono"      -  valor de atributo
+4.56          - valor de atributo
+exibr         - metodo ( vazer alguma coisa)
+medidaDoLado   -  atributo
+
+ programa 9
+
+
+ public class Ex9{
+  public static void main (String [] args){
+   Scanner s= new Scanner ( System.in);
+    int [] V1= new int[8];
+     for (int i=0; i< v1.lenght;i++){
+           v1 [i]= s.nextInt();
+      }
+           int aux;
+            for(int i=0; i< v1.lenght ;i++){
+                
+               for(int x=0; x< v1.lenght -1 ;x++){
+                           If  ( v1[i] < v1 [x]){
+                                 aux=v1 [x];
+                                   v1[x]=v1[i];
+                                     v1[i]=aux;
+                                  }
+                              }
+                        }
+
+          System.out.println( v1[0]);
+      }
+}
+
+
+
+                
+
+
+
+
+
+public class Ex9{
+  public static void main (String [] args){
+   Scanner s= new Scanner ( System.in);
+
+   intmaior;
+      int maior=0;
+      int numero;
+    for (int i=0; i<8; i++){
+     numero=s.nextInt():
+     if ( numero > maior){
+        maior = numero ;
+         }
+      }
+ Systen.out.println(maior);
+
+  }
+}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

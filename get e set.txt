@@ -1,0 +1,27 @@
+CLASS1
+
+
+public class Funcionario{
+
+	private String nome;
+	private String endereço;
+	private float salario;
+	public String telefone;
+
+
+
+public void modificarNome(String Nome){
+	nome=Nome;}
+public String obterNome(){
+return nome;}
+
+
+CLASS PRINCIPAL
+public class Principal{
+public static void main (String[]args){
+
+funcionario f1= new Funcionário();
+	    f1.telefone="99880070";
+	    f1.modificarNome("Alan");
+	    System.out.println (f1.obterNome());
+

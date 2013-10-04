@@ -1,0 +1,9 @@
+public class TestaVenda {
+    public static void main (String args []) {
+        
+        Venda v1=new Venda(400,15);
+        //passar o total entre os parenteses
+        v1.calculaTotal();
+       
+    }
+}

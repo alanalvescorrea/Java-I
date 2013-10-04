@@ -1,0 +1,53 @@
+
+import java.text.DecimalFormat;
+import java.util.Formatter;
+
+public class Venda {
+    private double preçoTabela;
+    private int parcelas;
+    
+    //inicializa as variáveis
+
+    public Venda (double pt, int parcela) {
+            preçoTabela=pt;
+            parcelas=parcela;
+        }
+
+        public void calculaTotal(){
+            double preçoTotal=0;
+            //classe que formata números com duas casas decimais
+          DecimalFormat df= new DecimalFormat("0.00");
+            if (parcelas==1) {
+                preçoTotal=(preçoTabela-((preçoTabela*2.5)/100));
+                System.out.println("Para uma parcelas fica :"+preçoTotal );
+            }
+                else{
+                if ((parcelas>=2)&&(parcelas<=5)) {                                                       //df.format() faz a formatação nas parcelas
+                    preçoTotal=preçoTabela;
+                   System.out.println("De 2 a 5 parcelas fica : "+preçoTotal + " são "+ parcelas +" de: "+df.format(calculaParcelas(preçoTotal) ));
+                }
+                    else{
+                    if ((parcelas>=6)&&(parcelas<=10)) {
+                        preçoTotal=(preçoTabela+((preçoTabela*6)/100));
+                        System.out.println("De 6 a 10 parcelas fica : "+preçoTotal + " são "+ parcelas +" de: "+df.format(calculaParcelas(preçoTotal )));
+                    }
+                        else{
+                        if ((parcelas>=11)&&(parcelas<=15)) {
+                            preçoTotal=(preçoTabela+((preçoTabela*13)/100));
+                                                                                                                   //método que calcula as parcelas
+                            System.out.println("De 11 a 15 parcelas fica : "+preçoTotal + " são "+ parcelas +" de: "+df.format(calculaParcelas(preçoTotal) ));
+                        }
+                    }
+                }
+            }
+           
+        }
+
+        public double calculaParcelas(double preçoTotal){
+
+            
+            double valorParcelas=0;
+            valorParcelas=preçoTotal/parcelas;
+            return valorParcelas;
+        }
+    }
